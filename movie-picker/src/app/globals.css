@@ -1,0 +1,36 @@
+:root {
+  --bg: #0e1013;
+  --panel: #171a20;
+  --border: #272c35;
+  --text: #e8eaf0;
+  --muted: #8b93a4;
+  --accent: #f5b942;
+  --good: #5bd48f;
+  --bad: #ef6b6b;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 system-ui, sans-serif; }
+main { max-width: 1000px; margin: 0 auto; padding: 24px; }
+h1 { font-size: 22px; margin: 0 0 4px; }
+h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 28px 0 10px; }
+.sub { color: var(--muted); margin: 0 0 8px; }
+.panel { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 14px; }
+input, select { background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 9px 10px; font: inherit; }
+input.wide { width: 100%; }
+button { background: var(--accent); color: #14100a; border: 0; border-radius: 8px; padding: 8px 14px; font: inherit; font-weight: 600; cursor: pointer; }
+button:disabled { opacity: .5; cursor: default; }
+button.chip { background: var(--bg); color: var(--muted); border: 1px solid var(--border); border-radius: 999px; padding: 3px 11px; font-weight: 400; font-size: 13px; }
+button.chip.on { color: var(--accent); border-color: var(--accent); }
+button.v { background: var(--bg); color: var(--text); border: 1px solid var(--border); padding: 4px 10px; font-size: 13px; font-weight: 500; }
+button.v.on.good { border-color: var(--good); color: var(--good); }
+button.v.on.bad { border-color: var(--bad); color: var(--bad); }
+button.link { background: none; color: var(--muted); padding: 0; font-weight: 400; text-decoration: underline; font-size: 12px; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 8px; }
+.card { display: flex; gap: 12px; padding: 12px 0; border-top: 1px solid var(--border); }
+.card:first-child { border-top: 0; }
+.poster { width: 62px; height: 92px; border-radius: 6px; background: var(--bg); object-fit: cover; flex: none; }
+.body { flex: 1; min-width: 0; }
+.title { font-weight: 600; }
+.meta { color: var(--muted); font-size: 12px; }
+.why { margin: 4px 0; color: var(--accent); }
+.err { color: var(--bad); margin-top: 8px; }
